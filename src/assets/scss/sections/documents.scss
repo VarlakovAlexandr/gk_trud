@@ -1,0 +1,82 @@
+/*
+background: #aeaeae; -pa
+ background: #ededed;  - pb
+
+ тень картинки
+ 
+*/
+.documents{
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.swiper.documents-slider{
+    margin: 0;
+    overflow: visible;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+
+    .swiper-slide{
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+        
+        position: relative;
+        aspect-ratio: 71.009 / 100 ;
+        overflow: hidden;
+        img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+
+            transition: 500ms ease;
+        }
+
+        &:hover{
+            img{
+                transform: translate(-50%, -50%) scale(1.01);
+            }
+        }
+    }
+
+    @media (min-width: 768px){
+        
+        width: 100%;
+        max-width: 90%;
+    }
+    @media (min-width: 1280px){
+        max-width: 66.6666%;
+    }
+
+    .pagination{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        
+    }
+    .swiper-pagination-lock{
+        display: none !important;
+    }
+    .swiper-pagination-bullet{
+        margin: 0;
+        background: #ededed;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background: #aeaeae;
+
+    }
+}

@@ -1,0 +1,47 @@
+.breadcrumbs{
+    padding-top: 16px;
+    padding-bottom: 32px;
+
+
+    @include calculateResponsiveProperty(1024px, 1600px, 32px, 92px, padding-top);
+    @include calculateResponsiveProperty(1024px, 1600px, 32px, 92px, padding-bottom);
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 4px;
+    }
+
+    a, span{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        color: #aeaeae;
+        @include calculateResponsiveProperty(1024px, 1600px, 12px, 16px, font-size);
+    }
+    a{
+        display: flex;
+        align-items: center;
+
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 1px;
+            
+           
+            margin: 0 8px;
+            flex-shrink: 0;
+            background-color: #aeaeae;
+        }
+    }
+    a:hover{
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+
+    span{
+        color: #333;
+    }
+}

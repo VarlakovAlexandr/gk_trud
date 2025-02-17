@@ -1,0 +1,251 @@
+@use "sass:math";
+@import 'functions';
+
+@mixin calculateResponsiveProperty($startBreakPoint, $endBreakPoint, $startValue, $finishValue, $property ){
+	@media (min-width: $startBreakPoint){
+		#{$property}: calculateResponsiveValue( $startBreakPoint, $endBreakPoint, $startValue, $finishValue );
+		
+	}
+	@media (min-width: $endBreakPoint){
+		#{$property}: $finishValue;
+	}
+}
+
+:root{
+	--font-family: "Open Sans", sans-serif;
+  	--second-family: "Bebas Neue", sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+button, textarea, input{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+textarea, input{
+	width: 100%;
+}
+
+path{
+	transition: ease 300ms;
+}
+
+a, textarea, input, button{
+	transition: ease 300ms;
+	font-family: inherit;
+	outline: none;
+}
+a, textarea, input, button{
+	font-family: var(--font-family);
+}
+
+textarea{
+	resize: none;
+}
+button{
+	cursor: pointer;
+}
+ul{
+	list-style: none;
+}
+
+address{
+	font-style: normal;
+}
+
+html{
+	
+	font-family: var(--font-family);
+}
+body{
+	display: flex;
+	flex-direction: column;	
+	min-height: 100vh;
+	
+}
+
+body.no-scroll{
+	overflow: hidden;
+}
+main{
+	flex-grow: 1;
+
+	padding-bottom: 80px;
+}
+
+section, .breadcrumbs{
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.container{
+	width: 100%;
+	max-width: 772px;
+	margin: 0 auto;
+	@include calculateResponsiveProperty(1024px, 1279px, 772px, 1100px, max-width);
+	@include calculateResponsiveProperty(1280px, 1440px, 1150px, 1200px, max-width);
+}
+
+h1{
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 56px;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1;
+
+}
+
+h2{
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 36px;
+	color: #ca653b;
+	line-height: 113%;
+
+
+	@include calculateResponsiveProperty(1024px, 1600px, 36px, 60px, font-size);
+
+}
+
+p{
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.3333;
+	@include calculateResponsiveProperty(1024px, 1600px, 16px, 20px, font-size);
+}
+
+.content-container{
+	display: flex;
+	flex-direction: column;
+	row-gap: 80px;
+	position: relative;
+	@include calculateResponsiveProperty(1024px, 1600px, 80px, 120px, row-gap);
+
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.content-container__round{
+	position: absolute;
+
+	top: 61%;
+	right: 0%;
+	transform: translate(40%, 0);
+	z-index: -1;
+
+	display: none;
+
+	@media (min-width: 1280px){
+		display: initial;
+	}
+}
+
+.title-block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 16px;
+
+
+	margin-bottom: 24px;
+
+	@include calculateResponsiveProperty(1024px, 1440px, 24px, 40px, margin-bottom);
+
+	@media (min-width: 768px){
+		justify-content: flex-start;
+		column-gap: 32px;
+	}
+
+	a{
+		font-family: var(--second-family);
+		font-weight: 300;
+		font-size: 24px;
+		text-decoration: underline;
+		text-decoration-skip-ink: none;
+		text-align: right;
+		color: #ccc;
+		text-wrap: nowrap;
+
+		&:hover{
+			color: #aeaeae;
+		}
+	}
+}
+.hystmodal__window{
+	background-color: transparent;
+}
+
+.thanks-window{
+	background-color: #00718F;
+	padding: 48px 24px 32px;
+	border-radius: 12px;
+	margin: 0 16px;
+}
+
+
+.feedback-window{
+	background-color: #00718F;
+	padding: 48px 24px 32px;
+	border-radius: 12px;
+	margin: 0 16px;
+	.form__inputs-group{
+		width: 100%;
+		max-width: initial;
+		margin: 0 auto;
+
+		display: grid;
+
+		grid-template-columns: 1fr;
+
+		@media (min-width: 540px){
+			grid-template-columns: 1fr 1fr;
+		}
+		grid-gap: 24px 16px;
+	}
+
+	.form__submit-wrap{
+		grid-column: 1 / -1;
+	}
+
+	.form__outer-input-wrap.textarea-wrap{
+		grid-column: 1 / -1;
+	}
+}
+.hystmodal__close{
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M22 2L2 22'/%3E%3Cpath fill='none' stroke='%23fff' stroke-linecap='square' stroke-miterlimit='50' stroke-width='2' d='M2 2l20 20'/%3E%3C/svg%3E");
+	@media (max-width: 767px) {
+		right: 24px;
+	}
+}
+.feedback-window__title{
+	text-align: center;
+	margin-bottom: 32px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: 600;
+	line-height: 1.2
+}
+
+@import 'sections/hero';
+@import 'sections/about';
+@import 'sections/programm';
+@import 'sections/ed-forms';
+@import 'sections/documents';
+@import 'sections/interesting';
+@import 'sections/form';
+@import 'blocks/target';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/breadcrumbs';
+@import 'blocks/mobile-menu';
+@import 'units/accordion';

@@ -1,0 +1,94 @@
+.target{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.swiper.targets-slider{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    .pagination{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        
+    }
+    .swiper-pagination-lock{
+        display: none !important;
+    }
+    .swiper-pagination-bullet{
+        margin: 0;
+        background: #ededed;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background: #aeaeae;
+
+    }
+
+
+
+    .swiper-slide{
+        border-radius: 0 40px 40px 40px;
+        padding: 16px;
+        width: 350px;
+        background: #1d809a;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        height: auto;
+        @include calculateResponsiveProperty(1024px, 1600px, 16px, 24px, row-gap);
+        
+        @include calculateResponsiveProperty(1024px, 1600px, 16px, 24px, padding);
+    }
+
+    h3{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        @include calculateResponsiveProperty(1024px, 1600px, 8px, 16px, row-gap);
+        li{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #b2cbd2;
+
+            @media (min-width: 1024px){
+                
+                line-height: 120%;
+            }
+
+            @include calculateResponsiveProperty(1024px, 1600px, 16px, 20px, font-size);
+
+
+            &:not(:last-of-type){
+                border-bottom: 1px solid #00718f;
+                padding-bottom: 8px;
+
+                @include calculateResponsiveProperty(1024px, 1600px, 8px, 16px, padding-bottom);
+            }
+        }
+    }
+}
+
