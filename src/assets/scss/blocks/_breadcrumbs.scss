@@ -4,7 +4,7 @@
 
 
     @include calculateResponsiveProperty(1024px, 1600px, 32px, 92px, padding-top);
-    @include calculateResponsiveProperty(1024px, 1600px, 32px, 92px, padding-bottom);
+    //@include calculateResponsiveProperty(1024px, 1600px, 32px, 92px, padding-bottom);
 
     .container{
         display: flex;

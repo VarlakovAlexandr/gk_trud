@@ -84,14 +84,19 @@ main{
 section, .breadcrumbs{
 	padding-left: 16px;
 	padding-right: 16px;
+
+	@include calculateResponsiveProperty(768px, 992px, 16px, 56px, padding-left);
+	@include calculateResponsiveProperty(768px, 992px, 16px, 56px, padding-right);
 }
 
 .container{
 	width: 100%;
-	max-width: 772px;
+	//max-width: 772px;
 	margin: 0 auto;
-	@include calculateResponsiveProperty(1024px, 1279px, 772px, 1100px, max-width);
-	@include calculateResponsiveProperty(1280px, 1440px, 1150px, 1200px, max-width);
+	//@include calculateResponsiveProperty(1024px, 1279px, 772px, 1100px, max-width);
+	//@include calculateResponsiveProperty(1280px, 1440px, 1150px, 1200px, max-width);
+
+	max-width: 1200px;
 }
 
 h1{
@@ -183,6 +188,8 @@ p{
 }
 .hystmodal__window{
 	background-color: transparent;
+
+	max-width: calc(100vw - 30px);
 }
 
 .thanks-window{
@@ -191,13 +198,34 @@ p{
 	border-radius: 12px;
 	margin: 0 16px;
 }
-
+#feedback-modal{
+	.hystmodal__window{
+		@include calculateResponsiveProperty(1024px, 1600px, 600px, 860px, width);
+	}
+}
 
 .feedback-window{
-	background-color: #00718F;
+	/*background-color: #00718F;
 	padding: 48px 24px 32px;
 	border-radius: 12px;
-	margin: 0 16px;
+	margin: 0 16px;*/
+
+	border: 2px solid #efefef;
+	border-radius: 40px;
+	padding: 16px;
+	box-shadow: 0 7px 15px 0 rgba(92, 92, 92, 0.1), 0 27px 27px 0 rgba(92, 92, 92, 0.09);
+	background: #fff;
+
+
+	border: 2px solid #efefef;
+	
+	
+	@include calculateResponsiveProperty(640px, 1024px, 16px, 36px, padding-top);
+	@include calculateResponsiveProperty(640px, 1024px, 16px, 40px, padding-bottom);
+
+	@include calculateResponsiveProperty(640px, 1024px, 16px, 60px, padding-left);
+	@include calculateResponsiveProperty(640px, 1024px, 16px, 60px, padding-right);
+
 	.form__inputs-group{
 		width: 100%;
 		max-width: initial;
@@ -234,6 +262,149 @@ p{
 	color: #fff;
 	font-weight: 600;
 	line-height: 1.2
+}
+
+
+.mobile-form__inputs-group{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 8px;
+
+	@media (min-width: 1024px){
+		grid-gap: 16px 24px;
+		grid-template-columns: 3fr 4fr;
+	}
+}
+.mobile-form__input{
+	border: 2px solid #b2cbd2;
+	border-radius: 16px;
+	padding: 8px 16px;
+
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	
+	color: #333;
+	&::placeholder{
+		opacity: 1;
+		color: #ccc;
+	}
+
+	&:focus{
+		border-color: #385a64;
+	}
+
+	@media (min-width: 1024px){
+		font-size: 20px;
+		padding: 5px 16px;
+	}
+
+}
+
+textarea.mobile-form__input{
+	height: 114px;
+}
+
+.mobile-form__input-wrap.name{
+	@media (min-width: 1024px){
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
+	}
+}
+.mobile-form__input-wrap.phone{
+	@media (min-width: 1024px){
+		grid-column: 1 / 2;
+		grid-row: 2 / 3;
+	}
+}
+.mobile-form__input-wrap.email{
+	@media (min-width: 1024px){
+		grid-column: 1 / 2;
+		grid-row: 3 / 4;
+	}
+}
+.mobile-form__input-wrap.count{
+	@media (min-width: 1024px){
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+	}
+}
+.mobile-form__input-wrap.textarea{
+	@media (min-width: 1024px){
+		@media (min-width: 1024px){
+			grid-column: 2 / 3;
+			grid-row: 2 / 4;
+		}	
+	}
+}
+
+.mobile-form__submit-wrap{
+	margin-top: 8px;
+	.hero__button{
+		padding: 12px 40px;
+		width: 100%;
+		font-size: 20px;
+		line-height: 120%;
+	}
+
+	@media (min-width: 1024px){
+		margin-top: 0;
+		@media (min-width: 1024px){
+			grid-column: 2 / 3;
+			grid-row: 4 / 5;
+		}	
+	}
+}
+
+
+.mobile-form__title-block {
+	margin-bottom: 24px;
+	row-gap: 8px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	@include calculateResponsiveProperty(1024px, 1600px, 24px, 40px, margin-bottom);
+}
+
+.mobile-form__close{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	&:hover{
+		path{
+			fill: red;
+		}
+	}
+}
+.mobile-form__title {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 36px;
+	text-align: center;
+	color: #ca653b;
+	line-height: 1.13;
+	@include calculateResponsiveProperty(1024px, 1600px, 36px, 60px, font-size);
+
+}
+.mobile-form__text {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-align: center;
+	color: #333;
+	@include calculateResponsiveProperty(1024px, 1600px, 16px, 20px, font-size);
+}
+
+#thanks-modal{
+	.mobile-form__title{
+		@include calculateResponsiveProperty(1024px, 1600px, 36px, 38px, font-size);
+		
+	}
 }
 
 @import 'sections/hero';

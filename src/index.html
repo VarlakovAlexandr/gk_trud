@@ -17,15 +17,25 @@
 <body>
     <div class="mobile-menu">
         <div class="mobile-menu__inner">
-            <button class="mobile-menu__close">
-                <span></span>
-                <span></span>
-            </button>
+            
 
 
-            <a href="index.html" class="header-logo">
-                <img src="assets/img/white-logo.svg" alt="" class="header-logo__img">                
-            </a>
+            <div class="mobile-menu__top">
+                <a href="index.html" class="header-logo">
+                    <img src="assets/img/white-logo.svg" alt="" class="header-logo__img">                
+                </a>
+
+                <button class="mobile-menu__close">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="mobile-menu__phone">
+                <a href="tel:+78126400768">+7 (812) 640-07-68</a>
+                <span>работаем по всей России</span>                
+            </div>
+
+            
             <form action="#" class="header-search">
                 <input type="text" name="s" placeholder="Поиск">
 
@@ -38,8 +48,7 @@
 
             <div class="mobile-menu__nav-container">
 
-                <h3 class="mobile-menu__title">Меню</h3>
-
+                
                 <div class="mobile-menu__nav-single-group">
                     
                     <div class="itc-accordion accordion-menu">
@@ -71,7 +80,33 @@
             
             <div class="mobile-menu__contacts">
                 
-    
+                <div class="mmc-group">
+                    <p class="mmc-group__title">санкт-петербург</p>
+                    <ul class="mmc-group__list">
+                        <li><a href="tel:+78001013312">+7 (800) 101-33-12</a></li>
+                        <li><a href="mailto:info@uccs.ru">info@uccs.ru</a></li>
+                    </ul>
+                </div>
+
+                <div class="mmc-group">
+                    <p class="mmc-group__title">мурманск</p>
+                    <ul class="mmc-group__list">
+                        <li><a href="tel:+7(8152)600605">+7 (8152) 60-06-05</a></li>
+                        <li><a href="mailto:info.mur@gk-trud.ru">info.mur@gk-trud.ru</a></li>
+                    </ul>
+                </div>
+
+
+                
+               
+            </div>
+            
+
+            <div class="mobile-menu__footer">
+                <div class="mobile-menu__gk">
+                    <img src="assets/img/icons/gk-white.svg" alt="">
+                </div>
+
                 <div class="header-messangers">
                     <a href="#">
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,168 +125,171 @@
                         </svg>
                     </a>
                 </div>
-                <ul class="footer-contacts">
-                    <li class="footer-contacts__item">
-                        <div class="footer-contacts__item-caption">Телефон:</div>
-                        <a href="tel:+78126400768">+7 (812) 640 07 68</a>
-                    </li>
-                    <li class="footer-contacts__item">
-                        <div class="footer-contacts__item-caption">Адрес:</div>
-                        <address>г. Санкт-Петербург, ул. Курская 19</address>
-                    </li>
-                    <li class="footer-contacts__item">
-                        <div class="footer-contacts__item-caption">E-mail:</div>
-                        <a href="mailto:info@uccs.ru">info@uccs.ru</a>
-                    </li>
-                    <li class="footer-contacts__item">
-                        <div class="footer-contacts__item-caption">График работы:</div>
-                        <div>09:00-18:00</div>
-                    </li>
-
-                    <li class="footer-contacts__item">
-                        <p class="footer-lisence">
-                            <span class="footer-contacts__item-caption">ЛИЦЕНЗИЯ</span><br/>
-                            № Л035-01271-78/00176927 от 13.12.2021г.</p>
-                    </li>
-                </ul>
             </div>
-            
             
         </div>
     </div>
-    <main>
 
-        <section class="hero">            
-            <header class="header">
-                <div class="container">
-                    <div class="header__top">
-                        <div class="header__gk">
-                            <img src="assets/img/icons/gk.svg" alt="">
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__gk">
+                    <img src="assets/img/icons/gk.svg" alt="">
+                </div>
+
+                <div class="ht-contacts">
+                    <div class="ht-contacts__item">
+                        <p class="ht-contacts__caption">Санкт-Петербург</p>
+                        <div class="ht-contacts__links">
+                            <a href="">+7 (812) 640-07-68</a>
+                            <a href="">info@uccs.ru</a>
                         </div>
-                        <div class="header-contacts">
-                            <div class="header__phones">
-                                <a href="tel:+78126400768" class="header-link">+7 (812)-640-07 68</a>
-                                <a href="tel:+78001013312" class="header-link">+7 (800)-101-33 12</a>
-                            </div>
-                            <a href="mailto:info@uccs.ru" class="header-link">info@uccs.ru</a>
-
-                            <div class="header-messangers">
-                                <a href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 0C6.3 0 0 6.3 0 14C0 21.7 6.3 28 14 28C21.7 28 28 21.7 28 14C28 6.3 21.7 0 14 0ZM20.86 8.54L18.48 20.02C18.34 20.86 17.78 21 17.22 20.58L13.58 17.78C12.74 18.62 11.9 19.32 11.76 19.6C11.48 19.74 11.34 20.02 11.06 20.02C10.64 20.02 10.64 19.74 10.5 19.46L9.24 15.26L5.46 14C4.62 13.72 4.62 13.16 5.6 12.74L19.88 7.28C20.44 7.14 21.14 7.42 20.86 8.54ZM17.5 9.8L9.52 14.84L10.78 19.04L11.06 16.24L17.92 10.08C18.34 9.66 18.06 9.66 17.5 9.8Z" fill="#E3ECEE" />
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 0C6.26828 0 0 6.26799 0 14C0 21.732 6.26828 28 14 28C21.7317 28 28 21.732 28 14C28 6.26799 21.7317 0 14 0ZM21.1015 15.5141C21.7541 16.1515 22.4444 16.7513 23.0302 17.4545C23.2897 17.7656 23.5343 18.0873 23.7205 18.4491C23.9863 18.965 23.7463 19.5307 23.2845 19.5613L20.4164 19.5608C19.6756 19.6221 19.0861 19.3233 18.5891 18.8169C18.1924 18.4133 17.8243 17.9822 17.4422 17.5648C17.2861 17.3935 17.1217 17.2322 16.9258 17.1054C16.5348 16.851 16.195 16.9289 15.971 17.3374C15.7427 17.753 15.6906 18.2136 15.6688 18.6762C15.6376 19.3525 15.4337 19.5292 14.7551 19.561C13.3051 19.6289 11.9293 19.4089 10.6506 18.6779C9.52258 18.0331 8.64949 17.1231 7.8887 16.0928C6.4072 14.0842 5.27259 11.8797 4.25314 9.61195C4.02369 9.10122 4.19155 8.82795 4.75499 8.81735C5.69109 8.7993 6.62719 8.8016 7.56329 8.81649C7.94427 8.82251 8.19634 9.04049 8.34271 9.39998C8.84857 10.6446 9.46873 11.8287 10.2459 12.927C10.453 13.2194 10.6643 13.511 10.9654 13.7176C11.2977 13.9456 11.5509 13.8702 11.7076 13.4993C11.8078 13.2635 11.8511 13.0115 11.8729 12.7588C11.9473 11.8935 11.9562 11.0284 11.8273 10.1665C11.7471 9.62713 11.4438 9.27881 10.9061 9.17684C10.6323 9.12499 10.6724 9.02359 10.8056 8.86719C11.0367 8.59679 11.2533 8.4295 11.6861 8.4295L14.9267 8.42893C15.4374 8.52919 15.552 8.75834 15.6213 9.2728L15.6241 12.874C15.6181 13.0731 15.7241 13.6631 16.0816 13.7935C16.368 13.888 16.5571 13.6583 16.7284 13.477C17.5055 12.6523 18.0592 11.6789 18.555 10.6715C18.7739 10.2272 18.9627 9.76749 19.146 9.30689C19.2823 8.9663 19.4943 8.79873 19.8787 8.80446L22.9992 8.80818C23.0912 8.80818 23.1846 8.80904 23.2757 8.8248C23.8016 8.91474 23.9457 9.14103 23.783 9.65406C23.5269 10.4601 23.0293 11.1315 22.5429 11.8047C22.0216 12.5254 21.4656 13.2209 20.9494 13.9447C20.4751 14.6064 20.5126 14.9395 21.1015 15.5141Z" fill="#E3ECEE" />
-                                    </svg>
-                                </a>
-                                <a href="#">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20.3 16.2866C19.9476 16.1202 18.2596 15.2881 17.9443 15.1587C17.629 15.0293 17.4064 14.9923 17.1652 15.3436C16.9241 15.6949 16.2749 16.4531 16.0708 16.6934C15.8668 16.9338 15.6813 16.9523 15.3289 16.6934C14.3166 16.2885 13.3817 15.713 12.5651 14.9923C11.8258 14.2984 11.2 13.4936 10.7102 12.6069C10.5062 12.2741 10.7102 12.0892 10.8586 11.9043C11.007 11.7194 11.1925 11.516 11.378 11.3126C11.5136 11.1367 11.6258 10.944 11.7118 10.7394C11.7579 10.6442 11.7818 10.5399 11.7818 10.4343C11.7818 10.3286 11.7579 10.2243 11.7118 10.1292C11.7118 9.96274 10.9328 8.28006 10.636 7.5959C10.3392 6.91173 10.0795 7.00419 9.8755 7.00419H9.13354C8.7801 7.01792 8.44655 7.17087 8.2061 7.42948C7.81798 7.79869 7.51055 8.24384 7.30307 8.73704C7.0956 9.23023 6.99256 9.76083 7.00042 10.2956C7.09529 11.6084 7.57953 12.8635 8.39159 13.9013C9.88175 16.1081 11.9205 17.892 14.3087 19.0788C15.1248 19.4301 15.7555 19.6335 16.2563 19.7999C16.9596 20.0118 17.703 20.0562 18.4266 19.9294C18.9072 19.8322 19.3626 19.6376 19.7646 19.3577C20.1667 19.0778 20.5067 18.7185 20.7637 18.3022C20.9776 17.788 21.0481 17.2258 20.9678 16.6749C20.875 16.5455 20.6524 16.4531 20.3 16.2866Z" fill="#E3ECEE" />
-                                        <path d="M23.8682 4.06974C22.5685 2.76661 21.0192 1.73519 19.3116 1.0363C17.6041 0.337409 15.773 -0.0147889 13.9262 0.000475763C11.4798 0.0131911 9.07961 0.663191 6.96527 1.88556C4.85094 3.10792 3.0965 4.85987 1.8772 6.96641C0.657901 9.07296 0.0164067 11.4604 0.0167898 13.8902C0.0171729 16.3201 0.65942 18.7073 1.87939 20.8135L0 28L7.40478 26.1334C9.45187 27.2397 11.7461 27.8174 14.0766 27.8133H13.9262C16.7038 27.8313 19.4239 27.0272 21.7395 25.5037C24.0551 23.9801 25.8614 21.806 26.928 19.2587C27.9946 16.7114 28.2732 13.9064 27.7282 11.2012C27.1833 8.496 25.8395 6.01332 23.8682 4.06974ZM13.9262 25.424C11.8412 25.4257 9.79486 24.8643 8.00618 23.8001L7.59272 23.5574L3.19496 24.6961L4.36018 20.4401L4.09706 20.0108C2.5961 17.61 2.03464 14.7455 2.51922 11.9608C3.00379 9.17607 4.50069 6.6649 6.72588 4.90372C8.95108 3.14255 11.7498 2.25391 14.5909 2.40641C17.4321 2.55892 20.118 3.74195 22.1392 5.73104C23.2227 6.79856 24.0815 8.06958 24.6655 9.47005C25.2495 10.8705 25.5471 12.3724 25.5409 13.8882C25.5359 16.9462 24.3106 19.8775 22.1335 22.0398C19.9564 24.2021 17.0051 25.4191 13.9262 25.424Z" fill="#E3ECEE" />
-                                    </svg>
-                                </a>
-                            </div>
-
-                            <a href="#" class="sleep-version">
-                                <img src="assets/img/icons/sleep-version.png" alt="">
+                    </div>
+                    <div class="ht-contacts__item">
+                        <p class="ht-contacts__caption">Мурманск</p>
+                        <div class="ht-contacts__links">
+                            <a href="">+7 (8152) 60-06-05</a>
+                            <a href="">info.mur@gk-trud.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <a href="#" class="header-logo">
+                    <img src="assets/img/green-logo.svg" alt="">
+                </a>
+    
+                <div class="header-bottom__right">
+                    <div class="hbr-top">
+                        <div class="header__phones">                            
+                            <a href="tel:+78001013312" class="header-link">+7 (800)-101-33 12</a>
+                        </div>
+                        <div class="header-messangers">
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.4 13.96C17.0979 13.8173 15.6511 13.1041 15.3808 12.9932C15.1105 12.8822 14.9197 12.8505 14.7131 13.1517C14.5064 13.4528 13.9499 14.1026 13.775 14.3087C13.6001 14.5147 13.4411 14.5306 13.139 14.3087C12.2714 13.9616 11.4701 13.4683 10.7701 12.8505C10.1364 12.2558 9.59998 11.5659 9.18017 10.806C9.00528 10.5207 9.18017 10.3622 9.30737 10.2037C9.43456 10.0452 9.59355 9.87084 9.75254 9.69649C9.86881 9.54572 9.965 9.38057 10.0387 9.20516C10.0782 9.12359 10.0987 9.0342 10.0987 8.94365C10.0987 8.85309 10.0782 8.7637 10.0387 8.68213C10.0387 8.53949 9.37096 7.09719 9.11658 6.51077C8.86219 5.92434 8.63961 6.00359 8.46472 6.00359H7.82875C7.5258 6.01536 7.2399 6.14646 7.0338 6.36812C6.70112 6.68459 6.43761 7.06615 6.25978 7.48889C6.08195 7.91162 5.99363 8.36642 6.00036 8.82478C6.08168 9.95005 6.49674 11.0258 7.19279 11.9154C8.47008 13.8069 10.2175 15.336 12.2646 16.3532C12.9642 16.6544 13.5047 16.8287 13.934 16.9714C14.5368 17.153 15.174 17.191 15.7942 17.0823C16.2061 16.999 16.5965 16.8322 16.9411 16.5923C17.2857 16.3524 17.5772 16.0444 17.7975 15.6876C17.9808 15.2469 18.0412 14.7649 17.9724 14.2928C17.8929 14.1819 17.7021 14.1026 17.4 13.96Z" fill="white" />
+                                    <path d="M20.4585 3.48835C19.3444 2.37138 18.0164 1.4873 16.5528 0.888255C15.0893 0.289208 13.5197 -0.0126762 11.9368 0.000407797C9.83986 0.0113067 7.78252 0.568449 5.97023 1.61619C4.15794 2.66393 2.65415 4.1656 1.60903 5.97121C0.563915 7.77683 0.0140628 9.82318 0.0143913 11.9059C0.0147197 13.9886 0.565217 16.0348 1.6109 17.8401L0 24L6.34696 22.4C8.1016 23.3483 10.0681 23.8435 12.0657 23.84H11.9368C14.3176 23.8554 16.649 23.1662 18.6338 21.8603C20.6187 20.5543 22.1669 18.6909 23.0811 16.5075C23.9954 14.3241 24.2342 11.9197 23.7671 9.60101C23.3 7.28229 22.1481 5.15428 20.4585 3.48835ZM11.9368 21.792C10.1496 21.7934 8.39559 21.3123 6.86244 20.4001L6.50804 20.1921L2.73853 21.168L3.73729 17.5201L3.51177 17.1521C2.22523 15.0943 1.74398 12.639 2.15933 10.2521C2.57468 7.8652 3.85773 5.71277 5.76504 4.20319C7.67235 2.69362 10.0712 1.93193 12.5065 2.06264C14.9418 2.19336 17.244 3.20738 18.9764 4.91232C19.9052 5.82734 20.6413 6.91678 21.1419 8.11718C21.6425 9.31758 21.8975 10.6049 21.8922 11.9042C21.8879 14.5253 20.8377 17.0379 18.9716 18.8913C17.1055 20.7447 14.5758 21.7878 11.9368 21.792Z" fill="white" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM17.88 7.32L15.84 17.16C15.72 17.88 15.24 18 14.76 17.64L11.64 15.24C10.92 15.96 10.2 16.56 10.08 16.8C9.84 16.92 9.72 17.16 9.48 17.16C9.12 17.16 9.12 16.92 9 16.68L7.92 13.08L4.68 12C3.96 11.76 3.96 11.28 4.8 10.92L17.04 6.24C17.52 6.12 18.12 6.36 17.88 7.32ZM15 8.4L8.16 12.72L9.24 16.32L9.48 13.92L15.36 8.64C15.72 8.28 15.48 8.28 15 8.4Z" fill="white" />
+                                  </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 0C5.37281 0 0 5.37256 0 12C0 18.6274 5.37281 24 12 24C18.6272 24 24 18.6274 24 12C24 5.37256 18.6272 0 12 0ZM18.087 13.2978C18.6463 13.8441 19.2381 14.3583 19.7402 14.961C19.9626 15.2277 20.1723 15.5034 20.3319 15.8135C20.5597 16.2557 20.354 16.7406 19.9582 16.7669L17.4997 16.7664C16.8648 16.8189 16.3595 16.5628 15.9335 16.1287C15.5935 15.7828 15.278 15.4133 14.9505 15.0556C14.8167 14.9087 14.6757 14.7705 14.5078 14.6617C14.1726 14.4437 13.8815 14.5105 13.6895 14.8606C13.4938 15.2169 13.4491 15.6117 13.4304 16.0082C13.4037 16.5879 13.2288 16.7394 12.6472 16.7666C11.4044 16.8248 10.2251 16.6362 9.12908 16.0097C8.16221 15.457 7.41385 14.677 6.76174 13.7938C5.49189 12.0722 4.51937 10.1826 3.64554 8.23881C3.44888 7.80104 3.59276 7.56681 4.0757 7.55773C4.87808 7.54226 5.68045 7.54423 6.48282 7.55699C6.80937 7.56215 7.02543 7.74899 7.1509 8.05713C7.58449 9.12393 8.11605 10.1389 8.78216 11.0803C8.95967 11.3309 9.14087 11.5809 9.39892 11.7579C9.68372 11.9534 9.90077 11.8888 10.0351 11.5708C10.121 11.3688 10.1581 11.1527 10.1767 10.9361C10.2406 10.1944 10.2482 9.45293 10.1377 8.71415C10.069 8.25183 9.80894 7.95327 9.34809 7.86586C9.11337 7.82142 9.14774 7.73451 9.26191 7.60045C9.46005 7.36868 9.64567 7.22529 10.0167 7.22529L12.7943 7.2248C13.232 7.31073 13.3303 7.50715 13.3897 7.94811L13.3921 11.0348C13.387 11.2055 13.4778 11.7113 13.7842 11.823C14.0297 11.904 14.1918 11.7071 14.3386 11.5517C15.0047 10.8448 15.4793 10.0105 15.9043 9.14701C16.0919 8.7662 16.2537 8.37213 16.4108 7.97733C16.5277 7.6854 16.7094 7.54177 17.0389 7.54668L19.7136 7.54987C19.7924 7.54987 19.8725 7.55061 19.9506 7.56411C20.4014 7.64121 20.5248 7.83517 20.3854 8.27491C20.1659 8.96581 19.7394 9.54132 19.3225 10.1183C18.8757 10.736 18.3991 11.3322 17.9567 11.9526C17.5501 12.5198 17.5822 12.8053 18.087 13.2978Z" fill="white" />
+                                  </svg>
                             </a>
                         </div>
 
-                        <form action="#" class="header-search">
-                            <input type="text" name="s" placeholder="Поиск">
-
-                            <button class="header-search__submit">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0391 11.9952C9.87371 12.9489 8.38396 13.5211 6.76056 13.5211C3.02681 13.5211 0 10.4943 0 6.76056C0 3.02681 3.02681 0 6.76056 0C10.4943 0 13.5211 3.02681 13.5211 6.76056C13.5211 8.38396 12.9489 9.87371 11.9952 11.0391L15.802 14.8459C16.066 15.1099 16.066 15.538 15.802 15.802C15.538 16.066 15.1099 16.066 14.8459 15.802L11.0391 11.9952ZM12.169 6.76056C12.169 9.74757 9.74757 12.169 6.76056 12.169C3.77356 12.169 1.35211 9.74757 1.35211 6.76056C1.35211 3.77356 3.77356 1.35211 6.76056 1.35211C9.74757 1.35211 12.169 3.77356 12.169 6.76056Z" fill="#CCCCCC" />
-                                </svg>
-                            </button>
-                        </form>
-                        
-                    </div>
-                    <div class="header__bottom">
-                        <a href="#" class="header-logo">
-                            <img src="assets/img/green-logo.svg" alt="">
-                        </a>
-
-                        <nav class="header-nav">
-                            <ul class="header-menu">
-                                <li class="header-menu__item">
-                                    <a href="#" class="header-menu__link">
-                                        О нас
-                                        <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.8998 1.11856C9.9666 1.18729 10 1.26632 10 1.35567C10 1.44502 9.9666 1.52406 9.8998 1.59278L5.23046 6.39691C5.16366 6.46564 5.08684 6.5 5 6.5C4.91316 6.5 4.83634 6.46564 4.76954 6.39691L0.1002 1.59278C0.0334001 1.52406 0 1.44502 0 1.35567C0 1.26632 0.0334001 1.18729 0.1002 1.11856L0.601202 0.603093C0.668003 0.534364 0.744823 0.5 0.831663 0.5C0.918504 0.5 0.995324 0.534364 1.06212 0.603093L5 4.65464L8.93788 0.603093C9.00468 0.534364 9.0815 0.5 9.16834 0.5C9.25518 0.5 9.332 0.534364 9.3988 0.603093L9.8998 1.11856Z" fill="white" />
-                                        </svg>
-                                    </a>
-
-                                    <ul class="header-menu__submenu">
-                                        <li>
-                                            <a href="#" class="header-menu__link">Формы обучения</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="header-menu__item">
-                                    <a href="#" class="header-menu__link">Направления обучения</a>
-                                </li>
-                                <li class="header-menu__item">
-                                    <a href="#" class="header-menu__link">Каталог учебных программ</a>
-                                </li>
-                                <li class="header-menu__item">
-                                    <a href="#" class="header-menu__link">Информация</a>
-                                </li>
-                                <li class="header-menu__item">
-                                    <a href="#" class="header-menu__link">Отзывы</a>
-                                </li>
-                                <li class="header-menu__item">
-                                    <a href="#" class="header-menu__link">Контакты</a>
-                                </li>
-                            </ul>
-                        </nav>
-
-
-                        <div class="hb-right">
-                            <div class="hb-right__contacts">
-                                <a href="mailto:">                                    
-                                    <img src="assets/img/icons/envelope.svg" alt="">
-                                </a>
-                                <a href="tel:">
-                                    <img src="assets/img/icons/call.svg" alt="">
-                                </a>
-                            </div>
-                            <button class="hb-search">
-                                <img src="assets/img/icons/search.svg" alt="">
-                            </button>
-                            <button class="hamburger">
-                                <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 1.5H22" stroke="white" stroke-width="2.56" stroke-linecap="round" />
-                                    <path d="M2 11.5H22" stroke="white" stroke-width="2.56" stroke-linecap="round" />
-                                    </svg>
-                            </button>
-                        </div>
-
-                        <div class="mobile-search">
-                            <button class="mobile-search__close">
-                                <span></span>
-                                <span></span>
-                            </button>
-
-
+                        <div class="hbr-top__right">
                             <form action="#" class="header-search">
                                 <input type="text" name="s" placeholder="Поиск">
-    
+        
                                 <button class="header-search__submit">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0391 11.9952C9.87371 12.9489 8.38396 13.5211 6.76056 13.5211C3.02681 13.5211 0 10.4943 0 6.76056C0 3.02681 3.02681 0 6.76056 0C10.4943 0 13.5211 3.02681 13.5211 6.76056C13.5211 8.38396 12.9489 9.87371 11.9952 11.0391L15.802 14.8459C16.066 15.1099 16.066 15.538 15.802 15.802C15.538 16.066 15.1099 16.066 14.8459 15.802L11.0391 11.9952ZM12.169 6.76056C12.169 9.74757 9.74757 12.169 6.76056 12.169C3.77356 12.169 1.35211 9.74757 1.35211 6.76056C1.35211 3.77356 3.77356 1.35211 6.76056 1.35211C9.74757 1.35211 12.169 3.77356 12.169 6.76056Z" fill="#CCCCCC" />
                                     </svg>
                                 </button>
                             </form>
+
+                            <a href="#" class="visually-impaired">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.7">
+                                      <path d="M18 20C20.2091 20 22 18.2091 22 16C22 13.7909 20.2091 12 18 12C15.7909 12 14 13.7909 14 16C14 18.2091 15.7909 20 18 20Z" stroke="white" stroke-width="2" />
+                                      <path d="M6 20C8.20914 20 10 18.2091 10 16C10 13.7909 8.20914 12 6 12C3.79086 12 2 13.7909 2 16C2 18.2091 3.79086 20 6 20Z" stroke="white" stroke-width="2" />
+                                      <path d="M14 16.2137L13.3441 15.9797C12.4749 15.6695 11.5252 15.6695 10.6559 15.9797L10 16.2137" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                      <path d="M2 16L2.76315 7.60532C2.87807 6.34121 2.93553 5.70916 3.30554 5.24199C3.67554 4.77482 4.27763 4.57412 5.48181 4.17273L6 4" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                      <path d="M22 16L21.2368 7.60532C21.1219 6.34121 21.0645 5.70916 20.6945 5.24199C20.3245 4.77482 19.7224 4.57412 18.5182 4.17273L18 4" stroke="white" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                  </svg>
+                            </a>
                         </div>
                     </div>
+                    <nav class="header-nav">
+                        <ul class="header-menu">
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link">
+                                    О нас
+                                    <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.8998 1.11856C9.9666 1.18729 10 1.26632 10 1.35567C10 1.44502 9.9666 1.52406 9.8998 1.59278L5.23046 6.39691C5.16366 6.46564 5.08684 6.5 5 6.5C4.91316 6.5 4.83634 6.46564 4.76954 6.39691L0.1002 1.59278C0.0334001 1.52406 0 1.44502 0 1.35567C0 1.26632 0.0334001 1.18729 0.1002 1.11856L0.601202 0.603093C0.668003 0.534364 0.744823 0.5 0.831663 0.5C0.918504 0.5 0.995324 0.534364 1.06212 0.603093L5 4.65464L8.93788 0.603093C9.00468 0.534364 9.0815 0.5 9.16834 0.5C9.25518 0.5 9.332 0.534364 9.3988 0.603093L9.8998 1.11856Z" fill="white" />
+                                    </svg>
+                                </a>
+    
+                                <ul class="header-menu__submenu">
+                                    <li>
+                                        <a href="#" class="header-menu__link">Формы обучения</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link">Направления обучения</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link">Каталог учебных программ</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link">Информация</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link">Отзывы</a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="hb-right">
+                        <div class="hb-right__contacts">
+                            <a href="mailto:">                                    
+                                <img src="assets/img/icons/envelope.svg" alt="">
+                            </a>
+                            <a href="tel:">
+                                <img src="assets/img/icons/call.svg" alt="">
+                            </a>
+                        </div>
+                        <button class="hb-search">
+                            <img src="assets/img/icons/search.svg" alt="">
+                        </button>
+                        <button class="hamburger">
+                            <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 1.5H22" stroke="white" stroke-width="2.56" stroke-linecap="round" />
+                                <path d="M2 11.5H22" stroke="white" stroke-width="2.56" stroke-linecap="round" />
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 
-                    
-                </div>                    
-            </header>
+        <div class="mobile-search">
+            <button class="mobile-search__close">
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <form action="#" class="header-search">
+                <input type="text" name="s" placeholder="Поиск">
+
+                <button class="header-search__submit">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0391 11.9952C9.87371 12.9489 8.38396 13.5211 6.76056 13.5211C3.02681 13.5211 0 10.4943 0 6.76056C0 3.02681 3.02681 0 6.76056 0C10.4943 0 13.5211 3.02681 13.5211 6.76056C13.5211 8.38396 12.9489 9.87371 11.9952 11.0391L15.802 14.8459C16.066 15.1099 16.066 15.538 15.802 15.802C15.538 16.066 15.1099 16.066 14.8459 15.802L11.0391 11.9952ZM12.169 6.76056C12.169 9.74757 9.74757 12.169 6.76056 12.169C3.77356 12.169 1.35211 9.74757 1.35211 6.76056C1.35211 3.77356 3.77356 1.35211 6.76056 1.35211C9.74757 1.35211 12.169 3.77356 12.169 6.76056Z" fill="#CCCCCC" />
+                    </svg>
+                </button>
+            </form>
+        </div>                 
+    </header>
+
+
+    <main>
+
+        <section class="hero">            
+            
             <div class="container">
                 <div class="hero__main-blocks">
                     <div class="hero__title-block">
@@ -275,7 +313,12 @@
                             <img src="assets/img/dots.svg" alt="" class="hero__dottes">
                             
                             <div class="hero__round-container">
-                                <img src="assets/img/top-round.svg" alt="" class="hero__round">
+                                
+
+                                <picture>
+                                    <source srcset="assets/img/top-round-desktop.svg" media="(min-width: 1280px)">                                    
+                                    <img src="assets/img/top-round.svg" alt="" class="hero__round">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -775,37 +818,56 @@
     <footer class="footer">
         <img src="assets/img/footer-watermark.png" alt="" class="footer-watermark">
         <div class="container">
+
+
+
+
+
             <div class="footer-left">
-                <a href="index.html" class="footer-logo">
-                    <img src="assets/img/white-logo.svg" alt="">
-                </a>
-                <p class="footer-lisence">ЛИЦЕНЗИЯ<br/>
-                    № Л035-01271-78/00176927 от 13.12.2021г.</p>
 
-                <div class="footer-bottom-block-desk-slot">
+                <div class="footer-left__logo-block">
+                    <a href="index.html" class="footer-logo">
+                        <img src="assets/img/white-logo.svg" alt="">
+                    </a>
 
+                    <div class="footer-left__logo-block--bt-group">
+                        <p class="footer-lisence">Лицензия<br/>
+                            № Л035-01271-78/00176927 от 13.12.2021г.</p>
+    
+    
+                        <div class="footer-left__sc-block" data-to-jump=".footer-desk-right-block" data-media-jump="1280">
+    
+                            <div class="footer-single-phone">
+                                <a href="tel:+78126400768">+7 (812) 640-07-68</a>
+                                <span>работаем по всей России</span>
+                            </div>
+        
+                            <form action="#" class="header-search">
+                                <input type="text" name="s" placeholder="Поиск">
+                
+                                <button class="header-search__submit">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.0391 11.9952C9.87371 12.9489 8.38396 13.5211 6.76056 13.5211C3.02681 13.5211 0 10.4943 0 6.76056C0 3.02681 3.02681 0 6.76056 0C10.4943 0 13.5211 3.02681 13.5211 6.76056C13.5211 8.38396 12.9489 9.87371 11.9952 11.0391L15.802 14.8459C16.066 15.1099 16.066 15.538 15.802 15.802C15.538 16.066 15.1099 16.066 14.8459 15.802L11.0391 11.9952ZM12.169 6.76056C12.169 9.74757 9.74757 12.169 6.76056 12.169C3.77356 12.169 1.35211 9.74757 1.35211 6.76056C1.35211 3.77356 3.77356 1.35211 6.76056 1.35211C9.74757 1.35211 12.169 3.77356 12.169 6.76056Z" fill="#CCCCCC" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>  
+                    </div>
+                    <div class="footer-msg-desk-slot">
+                        
+                    </div>
                 </div>
+                
+
+
+
+
+                 
+                
+
+
+               
             </div>
-
-            <ul class="footer-contacts">
-                <li class="footer-contacts__item">
-                    <div class="footer-contacts__item-caption">Телефон:</div>
-                    <a href="tel:+78126400768">+7 (812) 640 07 68</a>
-                </li>
-                <li class="footer-contacts__item">
-                    <div class="footer-contacts__item-caption">Адрес:</div>
-                    <address>г. Санкт-Петербург, ул. Курская 19</address>
-                </li>
-                <li class="footer-contacts__item">
-                    <div class="footer-contacts__item-caption">E-mail:</div>
-                    <a href="mailto:info@uccs.ru">info@uccs.ru</a>
-                </li>
-                <li class="footer-contacts__item">
-                    <div class="footer-contacts__item-caption">График работы:</div>
-                    <div>09:00-18:00</div>
-                </li>
-            </ul>
-
 
             <nav class="footer-nav">
                 <div class="itc-accordion accordion-menu">
@@ -831,91 +893,151 @@
                 </div>
             </nav>
 
-            <div class="footer-bottom-block-mob-slot">
-                <div class="footer-bottom-block" data-to-jump=".footer-bottom-block-desk-slot" data-media-jump="768">
+            <div class="footer-contacts" data-to-jump=".footer-desk-right-block" data-media-jump="1280">
+                <div class="footer-contacts__sub-block">
+                    <p class="footer-contacts__title">санкт-петербург</p>
+                    <ul class="footer-contacts__list">
+                        <li class="footer-contacts__item">                            
+                            <a href="tel:+78001013312">+7 (800) 101-33-12</a>
+                        </li>
+                        
+                        <li class="footer-contacts__item">                            
+                            <a href="mailto:info@uccs.ru">info@uccs.ru</a>
+                        </li>
 
-                    <div class="footer-messangers">
-                        <a href="#">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 0C6.3 0 0 6.3 0 14C0 21.7 6.3 28 14 28C21.7 28 28 21.7 28 14C28 6.3 21.7 0 14 0ZM20.86 8.54L18.48 20.02C18.34 20.86 17.78 21 17.22 20.58L13.58 17.78C12.74 18.62 11.9 19.32 11.76 19.6C11.48 19.74 11.34 20.02 11.06 20.02C10.64 20.02 10.64 19.74 10.5 19.46L9.24 15.26L5.46 14C4.62 13.72 4.62 13.16 5.6 12.74L19.88 7.28C20.44 7.14 21.14 7.42 20.86 8.54ZM17.5 9.8L9.52 14.84L10.78 19.04L11.06 16.24L17.92 10.08C18.34 9.66 18.06 9.66 17.5 9.8Z" fill="#fff" />
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 0C6.26828 0 0 6.26799 0 14C0 21.732 6.26828 28 14 28C21.7317 28 28 21.732 28 14C28 6.26799 21.7317 0 14 0ZM21.1015 15.5141C21.7541 16.1515 22.4444 16.7513 23.0302 17.4545C23.2897 17.7656 23.5343 18.0873 23.7205 18.4491C23.9863 18.965 23.7463 19.5307 23.2845 19.5613L20.4164 19.5608C19.6756 19.6221 19.0861 19.3233 18.5891 18.8169C18.1924 18.4133 17.8243 17.9822 17.4422 17.5648C17.2861 17.3935 17.1217 17.2322 16.9258 17.1054C16.5348 16.851 16.195 16.9289 15.971 17.3374C15.7427 17.753 15.6906 18.2136 15.6688 18.6762C15.6376 19.3525 15.4337 19.5292 14.7551 19.561C13.3051 19.6289 11.9293 19.4089 10.6506 18.6779C9.52258 18.0331 8.64949 17.1231 7.8887 16.0928C6.4072 14.0842 5.27259 11.8797 4.25314 9.61195C4.02369 9.10122 4.19155 8.82795 4.75499 8.81735C5.69109 8.7993 6.62719 8.8016 7.56329 8.81649C7.94427 8.82251 8.19634 9.04049 8.34271 9.39998C8.84857 10.6446 9.46873 11.8287 10.2459 12.927C10.453 13.2194 10.6643 13.511 10.9654 13.7176C11.2977 13.9456 11.5509 13.8702 11.7076 13.4993C11.8078 13.2635 11.8511 13.0115 11.8729 12.7588C11.9473 11.8935 11.9562 11.0284 11.8273 10.1665C11.7471 9.62713 11.4438 9.27881 10.9061 9.17684C10.6323 9.12499 10.6724 9.02359 10.8056 8.86719C11.0367 8.59679 11.2533 8.4295 11.6861 8.4295L14.9267 8.42893C15.4374 8.52919 15.552 8.75834 15.6213 9.2728L15.6241 12.874C15.6181 13.0731 15.7241 13.6631 16.0816 13.7935C16.368 13.888 16.5571 13.6583 16.7284 13.477C17.5055 12.6523 18.0592 11.6789 18.555 10.6715C18.7739 10.2272 18.9627 9.76749 19.146 9.30689C19.2823 8.9663 19.4943 8.79873 19.8787 8.80446L22.9992 8.80818C23.0912 8.80818 23.1846 8.80904 23.2757 8.8248C23.8016 8.91474 23.9457 9.14103 23.783 9.65406C23.5269 10.4601 23.0293 11.1315 22.5429 11.8047C22.0216 12.5254 21.4656 13.2209 20.9494 13.9447C20.4751 14.6064 20.5126 14.9395 21.1015 15.5141Z" fill="#fff" />
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M20.3 16.2866C19.9476 16.1202 18.2596 15.2881 17.9443 15.1587C17.629 15.0293 17.4064 14.9923 17.1652 15.3436C16.9241 15.6949 16.2749 16.4531 16.0708 16.6934C15.8668 16.9338 15.6813 16.9523 15.3289 16.6934C14.3166 16.2885 13.3817 15.713 12.5651 14.9923C11.8258 14.2984 11.2 13.4936 10.7102 12.6069C10.5062 12.2741 10.7102 12.0892 10.8586 11.9043C11.007 11.7194 11.1925 11.516 11.378 11.3126C11.5136 11.1367 11.6258 10.944 11.7118 10.7394C11.7579 10.6442 11.7818 10.5399 11.7818 10.4343C11.7818 10.3286 11.7579 10.2243 11.7118 10.1292C11.7118 9.96274 10.9328 8.28006 10.636 7.5959C10.3392 6.91173 10.0795 7.00419 9.8755 7.00419H9.13354C8.7801 7.01792 8.44655 7.17087 8.2061 7.42948C7.81798 7.79869 7.51055 8.24384 7.30307 8.73704C7.0956 9.23023 6.99256 9.76083 7.00042 10.2956C7.09529 11.6084 7.57953 12.8635 8.39159 13.9013C9.88175 16.1081 11.9205 17.892 14.3087 19.0788C15.1248 19.4301 15.7555 19.6335 16.2563 19.7999C16.9596 20.0118 17.703 20.0562 18.4266 19.9294C18.9072 19.8322 19.3626 19.6376 19.7646 19.3577C20.1667 19.0778 20.5067 18.7185 20.7637 18.3022C20.9776 17.788 21.0481 17.2258 20.9678 16.6749C20.875 16.5455 20.6524 16.4531 20.3 16.2866Z" fill="#fff" />
-                                <path d="M23.8682 4.06974C22.5685 2.76661 21.0192 1.73519 19.3116 1.0363C17.6041 0.337409 15.773 -0.0147889 13.9262 0.000475763C11.4798 0.0131911 9.07961 0.663191 6.96527 1.88556C4.85094 3.10792 3.0965 4.85987 1.8772 6.96641C0.657901 9.07296 0.0164067 11.4604 0.0167898 13.8902C0.0171729 16.3201 0.65942 18.7073 1.87939 20.8135L0 28L7.40478 26.1334C9.45187 27.2397 11.7461 27.8174 14.0766 27.8133H13.9262C16.7038 27.8313 19.4239 27.0272 21.7395 25.5037C24.0551 23.9801 25.8614 21.806 26.928 19.2587C27.9946 16.7114 28.2732 13.9064 27.7282 11.2012C27.1833 8.496 25.8395 6.01332 23.8682 4.06974ZM13.9262 25.424C11.8412 25.4257 9.79486 24.8643 8.00618 23.8001L7.59272 23.5574L3.19496 24.6961L4.36018 20.4401L4.09706 20.0108C2.5961 17.61 2.03464 14.7455 2.51922 11.9608C3.00379 9.17607 4.50069 6.6649 6.72588 4.90372C8.95108 3.14255 11.7498 2.25391 14.5909 2.40641C17.4321 2.55892 20.118 3.74195 22.1392 5.73104C23.2227 6.79856 24.0815 8.06958 24.6655 9.47005C25.2495 10.8705 25.5471 12.3724 25.5409 13.8882C25.5359 16.9462 24.3106 19.8775 22.1335 22.0398C19.9564 24.2021 17.0051 25.4191 13.9262 25.424Z" fill="#fff" />
-                            </svg>
-                        </a>
-                    </div>
+                        <li class="footer-contacts__item">
+                            <p class="footer-contacts__item-caption">Адрес:</p>
+                            <address>г. Санкт-Петербург, ул. Курская 19</address>
+                        </li>
 
-                    <p class="footer-lisence">Многопрофильный учебный центр
-                        Лицензия (Рег. № Л035-01271-
-                        78/00176927 от 13.12.2021 г.)</p>
+                        <li class="footer-contacts__item">
+                            <p class="footer-contacts__item-caption">График работы:</p>
+                            <p>ПН-ПТ 09:00-18:00</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-contacts__sub-block">
+                    <p class="footer-contacts__title">мурманск</p>
+                    <ul class="footer-contacts__list">
+                        <li class="footer-contacts__item">                            
+                            <a href="tel:+78152600605">+7 (8152) 60-06-05</a>
+                        </li>
+                        
+                        <li class="footer-contacts__item">                            
+                            <a href="mailto:info.mur@gk-trud.ru">info.mur@gk-trud.ru</a>
+                        </li>
+
+                        <li class="footer-contacts__item">
+                            <p class="footer-contacts__item-caption">Адрес:</p>
+                            <address>г. Мурманск, проезд Рыбный, д. 8</address>
+                        </li>
+
+                        <li class="footer-contacts__item">
+                            <p class="footer-contacts__item-caption">График работы:</p>
+                            <p>ПН-ПТ 09:00-18:00</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
+            
+            <div class="footer-desk-right-block">
+
+            </div>
+
+            <div class="footer-msg-mob-slot">
+                <div class="footer-messangers" data-to-jump=".footer-msg-desk-slot" data-media-jump="1280">
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3 16.2866C19.9476 16.1202 18.2596 15.2881 17.9443 15.1587C17.629 15.0293 17.4064 14.9923 17.1652 15.3436C16.9241 15.6949 16.2749 16.4531 16.0708 16.6934C15.8668 16.9338 15.6813 16.9523 15.3289 16.6934C14.3166 16.2885 13.3817 15.713 12.5651 14.9923C11.8258 14.2984 11.2 13.4936 10.7102 12.6069C10.5062 12.2741 10.7102 12.0892 10.8586 11.9043C11.007 11.7194 11.1925 11.516 11.378 11.3126C11.5136 11.1367 11.6258 10.944 11.7118 10.7394C11.7579 10.6442 11.7818 10.5399 11.7818 10.4343C11.7818 10.3286 11.7579 10.2243 11.7118 10.1292C11.7118 9.96274 10.9328 8.28006 10.636 7.5959C10.3392 6.91173 10.0795 7.00419 9.8755 7.00419H9.13354C8.7801 7.01792 8.44655 7.17087 8.2061 7.42948C7.81798 7.79869 7.51055 8.24384 7.30307 8.73704C7.0956 9.23023 6.99256 9.76083 7.00042 10.2956C7.09529 11.6084 7.57953 12.8635 8.39159 13.9013C9.88175 16.1081 11.9205 17.892 14.3087 19.0788C15.1248 19.4301 15.7555 19.6335 16.2563 19.7999C16.9596 20.0118 17.703 20.0562 18.4266 19.9294C18.9072 19.8322 19.3626 19.6376 19.7646 19.3577C20.1667 19.0778 20.5067 18.7185 20.7637 18.3022C20.9776 17.788 21.0481 17.2258 20.9678 16.6749C20.875 16.5455 20.6524 16.4531 20.3 16.2866Z" fill="#fff" />
+                            <path d="M23.8682 4.06974C22.5685 2.76661 21.0192 1.73519 19.3116 1.0363C17.6041 0.337409 15.773 -0.0147889 13.9262 0.000475763C11.4798 0.0131911 9.07961 0.663191 6.96527 1.88556C4.85094 3.10792 3.0965 4.85987 1.8772 6.96641C0.657901 9.07296 0.0164067 11.4604 0.0167898 13.8902C0.0171729 16.3201 0.65942 18.7073 1.87939 20.8135L0 28L7.40478 26.1334C9.45187 27.2397 11.7461 27.8174 14.0766 27.8133H13.9262C16.7038 27.8313 19.4239 27.0272 21.7395 25.5037C24.0551 23.9801 25.8614 21.806 26.928 19.2587C27.9946 16.7114 28.2732 13.9064 27.7282 11.2012C27.1833 8.496 25.8395 6.01332 23.8682 4.06974ZM13.9262 25.424C11.8412 25.4257 9.79486 24.8643 8.00618 23.8001L7.59272 23.5574L3.19496 24.6961L4.36018 20.4401L4.09706 20.0108C2.5961 17.61 2.03464 14.7455 2.51922 11.9608C3.00379 9.17607 4.50069 6.6649 6.72588 4.90372C8.95108 3.14255 11.7498 2.25391 14.5909 2.40641C17.4321 2.55892 20.118 3.74195 22.1392 5.73104C23.2227 6.79856 24.0815 8.06958 24.6655 9.47005C25.2495 10.8705 25.5471 12.3724 25.5409 13.8882C25.5359 16.9462 24.3106 19.8775 22.1335 22.0398C19.9564 24.2021 17.0051 25.4191 13.9262 25.424Z" fill="#fff" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 0C6.3 0 0 6.3 0 14C0 21.7 6.3 28 14 28C21.7 28 28 21.7 28 14C28 6.3 21.7 0 14 0ZM20.86 8.54L18.48 20.02C18.34 20.86 17.78 21 17.22 20.58L13.58 17.78C12.74 18.62 11.9 19.32 11.76 19.6C11.48 19.74 11.34 20.02 11.06 20.02C10.64 20.02 10.64 19.74 10.5 19.46L9.24 15.26L5.46 14C4.62 13.72 4.62 13.16 5.6 12.74L19.88 7.28C20.44 7.14 21.14 7.42 20.86 8.54ZM17.5 9.8L9.52 14.84L10.78 19.04L11.06 16.24L17.92 10.08C18.34 9.66 18.06 9.66 17.5 9.8Z" fill="#fff" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 0C6.26828 0 0 6.26799 0 14C0 21.732 6.26828 28 14 28C21.7317 28 28 21.732 28 14C28 6.26799 21.7317 0 14 0ZM21.1015 15.5141C21.7541 16.1515 22.4444 16.7513 23.0302 17.4545C23.2897 17.7656 23.5343 18.0873 23.7205 18.4491C23.9863 18.965 23.7463 19.5307 23.2845 19.5613L20.4164 19.5608C19.6756 19.6221 19.0861 19.3233 18.5891 18.8169C18.1924 18.4133 17.8243 17.9822 17.4422 17.5648C17.2861 17.3935 17.1217 17.2322 16.9258 17.1054C16.5348 16.851 16.195 16.9289 15.971 17.3374C15.7427 17.753 15.6906 18.2136 15.6688 18.6762C15.6376 19.3525 15.4337 19.5292 14.7551 19.561C13.3051 19.6289 11.9293 19.4089 10.6506 18.6779C9.52258 18.0331 8.64949 17.1231 7.8887 16.0928C6.4072 14.0842 5.27259 11.8797 4.25314 9.61195C4.02369 9.10122 4.19155 8.82795 4.75499 8.81735C5.69109 8.7993 6.62719 8.8016 7.56329 8.81649C7.94427 8.82251 8.19634 9.04049 8.34271 9.39998C8.84857 10.6446 9.46873 11.8287 10.2459 12.927C10.453 13.2194 10.6643 13.511 10.9654 13.7176C11.2977 13.9456 11.5509 13.8702 11.7076 13.4993C11.8078 13.2635 11.8511 13.0115 11.8729 12.7588C11.9473 11.8935 11.9562 11.0284 11.8273 10.1665C11.7471 9.62713 11.4438 9.27881 10.9061 9.17684C10.6323 9.12499 10.6724 9.02359 10.8056 8.86719C11.0367 8.59679 11.2533 8.4295 11.6861 8.4295L14.9267 8.42893C15.4374 8.52919 15.552 8.75834 15.6213 9.2728L15.6241 12.874C15.6181 13.0731 15.7241 13.6631 16.0816 13.7935C16.368 13.888 16.5571 13.6583 16.7284 13.477C17.5055 12.6523 18.0592 11.6789 18.555 10.6715C18.7739 10.2272 18.9627 9.76749 19.146 9.30689C19.2823 8.9663 19.4943 8.79873 19.8787 8.80446L22.9992 8.80818C23.0912 8.80818 23.1846 8.80904 23.2757 8.8248C23.8016 8.91474 23.9457 9.14103 23.783 9.65406C23.5269 10.4601 23.0293 11.1315 22.5429 11.8047C22.0216 12.5254 21.4656 13.2209 20.9494 13.9447C20.4751 14.6064 20.5126 14.9395 21.1015 15.5141Z" fill="#fff" />
+                        </svg>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="footer-requisites-mob-slot">
+                <div class="footer-requisites" data-to-jump=".footer-left__logo-block--bt-group" data-media-jump="1280">
+                    <p class="footer-requisites__title">ООО «Центр Содействия»</p>
+                    <ul class="footer-requisites__list">
+                        <li>192007, город Санкт-Петербург, Курская ул, д. 19 литера А, помещ. 1-н </li>
+                        <li>ИНН 7802664464</li>
+                        <li>КПП 781601001</li>                        
+                    </ul>
+                </div>
+            </div>
+
+            
+
         </div>
-        <div class="footer-copiright">© 2024 Учебный центр СОДЕЙСТВИЕ 
-            Общество с ограниченной ответственностью «УЧЕБНЫЙ ЦЕНТР СОДЕЙСТВИЕ»</div>
+        <div class="footer-copiright">© 2024 Учебный центр СОДЕЙСТВИЯ 
+            Общество с ограниченной ответственностью 
+            «Центр Содействия»</div>
     </footer>
 
 
     <div class="hystmodal" id="feedback-modal" aria-hidden="true">
         <div class="hystmodal__wrap">
             <div class="hystmodal__window" role="dialog" aria-modal="true">
-                <button data-hystclose class="hystmodal__close">Закрыть</button>
+                
                 <!-- Ваш HTML код модального окна -->
                 <div class="feedback-window">
-                    <h3 class="feedback-window__title">Оставьте заявку и наши менеджеры с вами свяжутся в течении 5 минут в рабочее время и ответят на все вопросы.</h3>
-                    <form class="contact-form">
-                        <div class="form__inputs-group">
-                        
-    
-    
-                            <label  class="form__outer-input-wrap">
-                                <span class="form__input-label">Номер телефона</span>
-                                <span class="form__inner-input-wrap">
-                                    <input type="tel" class="form__input" placeholder="+7 ()" name="phone" required>
-                                </span>
-                            </label>
-        
-                            <label  class="form__outer-input-wrap">
-                                <span class="form__input-label">Ваше имя</span>
-                                <span class="form__inner-input-wrap">
-                                    <input type="text" class="form__input" placeholder="Ваше имя" name="name" required>
-                                </span>
-                            </label>
-                            <label  class="form__outer-input-wrap">
-                                <span class="form__input-label">E-mail</span>
-                                <span class="form__inner-input-wrap">
-                                    <input type="email" class="form__input" placeholder="E-mail" name="email" required>
-                                </span>
-                            </label>
-                            <label  class="form__outer-input-wrap">
-                                <span class="form__input-label">Количество человек</span>
-                                <span class="form__inner-input-wrap">
-                                    <input type="text" class="form__input" placeholder="Количество человек" name="count" required>
-                                </span>
-                            </label>
-    
-    
-                            <label  class="form__outer-input-wrap textarea-wrap">
-                                
-                                <span class="form__inner-input-wrap">
-                                    <textarea name="message" class="form__input" placeholder="Укажите наименование необходимой программы и наш менеджер свяжется с вами"></textarea>
-                                </span>
-                            </label>
-        
-                            <div class="form__submit-wrap">
-                                <button class="hero__button">Отправить</button>
-                            </div>
+                    <div class="mobile-form">
+                        <div class="mobile-form__title-block">
+                            <button data-hystclose class="mobile-form__close">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM15.36 14.3C15.65 14.59 15.65 15.07 15.36 15.36C15.21 15.51 15.02 15.58 14.83 15.58C14.64 15.58 14.45 15.51 14.3 15.36L12 13.06L9.7 15.36C9.55 15.51 9.36 15.58 9.17 15.58C8.98 15.58 8.79 15.51 8.64 15.36C8.35 15.07 8.35 14.59 8.64 14.3L10.94 12L8.64 9.7C8.35 9.41 8.35 8.93 8.64 8.64C8.93 8.35 9.41 8.35 9.7 8.64L12 10.94L14.3 8.64C14.59 8.35 15.07 8.35 15.36 8.64C15.65 8.93 15.65 9.41 15.36 9.7L13.06 12L15.36 14.3Z" fill="#CCCCCC" />
+                                </svg>
+                            </button>
+                            
+                            <p class="mobile-form__title">оставьте заявку</p>
+                            <p class="mobile-form__text">Наши менеджеры свяжутся с вами в течение 5 минут в рабочее время 
+                                и ответят на все ваши вопросы.</p>
                         </div>
-                    </form>
+                        <form >
+    
+                            
+    
+                            <div class="mobile-form__inputs-group">
+                                <label class="mobile-form__input-wrap name">
+                                    <input type="text" class="mobile-form__input" placeholder="Ваше имя" name="name" required>
+                                </label>
+                                
+                                <label class="mobile-form__input-wrap phone">
+                                    <input type="tel" class="mobile-form__input" placeholder="Телефон" name="phone" required>
+                                </label>
+                                
+                                <label class="mobile-form__input-wrap email">
+                                    <input type="email" class="mobile-form__input" placeholder="Почта" name="email" required>
+                                </label>
+                                <label class="mobile-form__input-wrap count">
+                                    <input type="text" class="mobile-form__input" placeholder="Кол-во обучаемых человек" name="count" required>
+                                </label>
+                                <label class="mobile-form__input-wrap textarea">
+                                    <textarea name="message" class="mobile-form__input" placeholder="Какая программа вас интересует?"></textarea>
+                                </label>
+                                <div class="mobile-form__submit-wrap">
+                                    <button class="hero__button">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    
+                    
                     
                 </div>
                 
@@ -927,11 +1049,17 @@
     <div class="hystmodal" id="thanks-modal" aria-hidden="true">
         <div class="hystmodal__wrap">
             <div class="hystmodal__window" role="dialog" aria-modal="true">
-                <button data-hystclose class="hystmodal__close">Закрыть</button>
+                
                 <!-- Ваш HTML код модального окна -->
                 <div class="feedback-window">
-                    <h3 class="feedback-window__title">Спасибо! <br/> Ваша заявка принята</h3>
-
+                    <div class="mobile-form__title-block">
+                        <button data-hystclose class="mobile-form__close">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM15.36 14.3C15.65 14.59 15.65 15.07 15.36 15.36C15.21 15.51 15.02 15.58 14.83 15.58C14.64 15.58 14.45 15.51 14.3 15.36L12 13.06L9.7 15.36C9.55 15.51 9.36 15.58 9.17 15.58C8.98 15.58 8.79 15.51 8.64 15.36C8.35 15.07 8.35 14.59 8.64 14.3L10.94 12L8.64 9.7C8.35 9.41 8.35 8.93 8.64 8.64C8.93 8.35 9.41 8.35 9.7 8.64L12 10.94L14.3 8.64C14.59 8.35 15.07 8.35 15.36 8.64C15.65 8.93 15.65 9.41 15.36 9.7L13.06 12L15.36 14.3Z" fill="#CCCCCC" />
+                            </svg>
+                        </button>
+                        <p class="mobile-form__title">Спасибо! <br/> Ваша заявка принята</p>
+                    </div>
                     <div class="form__submit-wrap">
                         <button class="hero__button" data-hystclose>Ок</button>
                     </div>
